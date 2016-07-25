@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jere.databasesql.WishDetails"
+    tools:showIn="@layout/activity_wish_details">
+
+    <TextView
+        android:id="@+id/txt_wish_title"
+        android:layout_width="wrap_content"
+        android:text="Wish Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="My wish is ..."
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:id="@+id/txt_wish_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:text="Date"
+        android:layout_below="@id/txt_wish_description"
+        android:id="@+id/wishdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_wish_delete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/wishdate"
+        android:text="@string/btn_delete_wish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
